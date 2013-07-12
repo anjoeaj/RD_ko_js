@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Dynamic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <script src="scripts.js"></script>
+  
+  <script>
+  	$(document).ready(function()
+  	{
+  		var page1ScreenDetails = 
+  		{
+		   screenId:'page1',
+		   header:
+		      {
+		         title:'App Settings',
+		         leftButton:
+		         {
+		            title:'Back',
+		            dataBind:'click: goBack'
+		         },
+		         rightButton:
+		         {
+		            title:'',
+		            dataBind:'click: right'
+		         }
+		      },
+		   content:[
+		   		{
+		   			label:'Profile Name',
+		   			type: 'text',
+		   			dataBind:'text: profileNameFromViewModel'
+		   		},{
+		   			label:'Name',
+		   			type: 'text',
+		   			dataBind:'text: nameFromViewModel'
+		   		},{
+		   			label:'District',
+		   			type: 'text',
+		   			dataBind:'text: districtFromViewModel'
+		   		}
+		   ],
+		   footer:
+		   {
+		   		buttons:
+		   		[
+		   			{
+		   				buttonText:'Cancel',
+		   				dataBind:'click: goBack'
+		   			},
+		   			{
+		   				buttonText:'Save',
+		   				dataBind:'click: doSave'
+		   			}
+		   		]
+		   		
+		   }       
+		}
+  		createScreen(page1ScreenDetails);
+  	});
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
