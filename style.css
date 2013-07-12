@@ -1,0 +1,214 @@
+
+.ui-body-c{
+	background-color: white;
+	background-image: none;
+}
+
+#settings {
+    height   : 100%;
+    margin     : 0;
+    padding    : 0;
+}
+
+#settings .ui-content, #settingsmenu {
+    min-height : 100%;
+    height     : 100%;
+    margin     : 0;
+    padding    : 0;
+}
+
+.ui-li{
+    height : 20%;
+}
+
+.ui-icon-custom-menu1 {
+    background: url(/images/Menuicon.png) 50% 50% no-repeat;
+    background-color: transparent;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin: 0 !important;
+}
+
+.ui-icon-custom-menu{
+    background: url("images/Menuicon.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin: 0 !important;
+    -moz-border-radius: 0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+}
+
+.ui-li-static {
+padding: 15px;
+background-color: #FAFAFA;
+}
+
+#settingsmenu .ui-icon{
+	background-color:transparent;
+}
+
+.listHeader .ui-title{
+	font-size: 20px;
+	text-align: left;
+	margin-left:10%;
+}
+
+.listContainer{
+	overflow: hidden;
+	overflow-y: hidden;
+}
+
+.accept-row-left-text , .accept-row-right-text{
+	padding-left : 10px;
+	/*padding-top:15px;*/
+	padding-bottom:30px;
+	display: inline-block;
+	
+	font-family: 'Helvetica Neue';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: black;
+}
+
+.accept-row-right-text{
+	width : 40%;
+	float: right;
+}
+
+.accept-row-right-text  .ui-btn-up-c{
+	border: 0px;
+	background-image:none;
+	background-color:transparent;
+	border-color : transparent;
+	box-shadow: none;
+}
+
+.accept-row-right-text  .ui-btn-hover-c:hover{
+	border: 0px;
+	background-image:none;
+	background-color:transparent;
+	border-color : transparent;
+	box-shadow: none;
+}
+div.ui-input-text{
+	float : right;
+	background-color:transparent;
+	border: 0px solid;
+	width:50%;
+	
+}
+
+div.ui-input-text:focus{
+	
+}
+label{
+	font-family: 'Helvetica Neue';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	color: gray;
+}
+
+.detailList{
+	list-style-type: none;
+	margin :0;
+	padding : 0px;
+}
+
+.detailList li{
+	 height : 40%;
+	 border-bottom: 1px solid #ccc;
+}
+
+.AmpVersionPanel{
+	background-color:#044062;
+	color:white;
+}
+.SaveC , .CancelC{
+	display:inline-block;
+	width : 50%;
+	
+}
+.SaveC {
+	
+	float: left;
+}
+
+.CancelC{
+	float:right;
+}
+
+.buttons
+{
+	padding : 15;
+	border-radius: 0;
+	
+}
+
+.ui-shadow-inset
+{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.ui-icon-arrow-d{
+/*
+ * over-riding css style of dropdown arrow icon
+ */
+	background-color: transparent;
+}
+
+.ui-btn-corner-all{
+	border-radius : 0px;
+}
+
+.popupTemplate{
+	display: block;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	background-color: white;
+	z-index: 10000;
+	text-align: center;
+	//border-style:solid;
+	//border-width:1px;
+}
+
+.popupHeader{
+	background-color: brown;
+	text-align: left;
+	color: white;
+	padding-left: 1em;
+	border-style:solid;
+	border-width:1px;
+	
+}
+
+.popupLeftBtn{
+	float: left;
+	border-right:1px solid gray;
+}
+.popupRightBtn{
+	float: right;
+}
+
+.popupLeftBtn,.popupRightBtn{
+	/*display:inline-block;*/
+	width : 8em;
+	background-color: #F4F4F4;
+	padding-bottom: 0.5em;
+	padding-top:0.5em;
+	font-size: 25px;
+	border-top:1px solid gray;
+}
