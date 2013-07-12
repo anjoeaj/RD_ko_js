@@ -28,10 +28,42 @@ createHeader = function(screenId,header)
   	
 };
 
-   
+getUiControl = function(requiredType){
+	
+}
+
 createContent = function(content)
 {
+	var parentDiv = document.createElement("div");
 	
+	for(var i = 0; i < content.length; i ++){
+		var rowDiv = document.createElement("div");
+		
+		//this will hold the text
+		var nameParagraph = document.createElement("p");
+		nameParagraph.appendChild(document.createTextNode(content[i].label));
+		
+		//corresponding input type from json
+		var valueControl = document.createElement(content[i].type);
+		
+		//data binding for knockout
+		valueControl.setAttribute("data-bind",content[i].dataBind);
+		
+		/*
+		//for extra attributes
+		if(content[i].extraAttributes!=undefined || content[i].extraAttributes!=null){
+			//later
+		}
+		*/
+		
+		rowDiv.appendChild(nameParagraph);
+		rowDiv.appendChild(valueControl);
+		parentDiv.appendChild(rowDiv);
+	}
+	
+	$("#page1").append(parentDiv);
+	
+	console.log("After creatiion of +++ "+parentDiv.innerHTML);
 };
 
 createFooter = function(footer)
@@ -50,5 +82,30 @@ goToSecondPage = function()
 }
 
 
-
+//unit test code
+var samplejson = {
+	id		: "pages/page1",
+	
+	rows	: [
+				{
+					type : "text",
+					label : "Name",
+					dataBind: "value : name"
+				},
+				{
+					type : "text",
+					label : "Age",
+					dataBind: "value : age"
+				},
+				{
+					type : "text",
+					label : "Gender",
+					dataBind: "value : gender"
+				},
+		
+		
+	]
+};
+console.log("Just before creating content");
+createContent(samplejson);
 

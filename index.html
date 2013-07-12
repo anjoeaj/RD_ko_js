@@ -33,16 +33,17 @@
 		   content:[
 		   		{
 		   			label:'Profile Name',
-		   			type: 'text',
-		   			dataBind:'text: profileNameFromViewModel'
+		   			type: 'input',
+		   			dataBind:'value: profileNameFromViewModel',
+		   			extraAttributes:'data-role="header" onclick="jinko();"'
 		   		},{
 		   			label:'Name',
-		   			type: 'text',
-		   			dataBind:'text: nameFromViewModel'
+		   			type: 'input',
+		   			dataBind:'value: nameFromViewModel'
 		   		},{
 		   			label:'District',
-		   			type: 'text',
-		   			dataBind:'text: districtFromViewModel'
+		   			type: 'select',
+		   			dataBind:'value: districtFromViewModel'
 		   		}
 		   ],
 		   footer:
